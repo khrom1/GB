@@ -14,7 +14,6 @@ x = int(input("Введите искомое число X: "))
 list_1 = []
 for i in range(n):
     list_1.append(random.randint(1, n+1))
-print(list_1)
 count = 0
 for i in (list_1):
     if i == x:
