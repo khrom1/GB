@@ -13,7 +13,7 @@ n = int(input('Введите количество элементов в мас�
 x = int(input("Введите искомое число X: "))
 list_1 = []
 for i in range(n):
-    list_1.append(random.randint(1, n+1))
+    list_1.append(random.randint(1, n))
 count = 0
 for i in (list_1):
     if i == x:
