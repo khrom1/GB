@@ -8,3 +8,20 @@
 #     1 2 3 4 5
 #     6
 #     -> 5
+
+import random
+n = int(input('Введите количество элементов в массиве :'))
+x = int(input("Введите искомое число X: "))
+list_1 = []
+for i in range(n):
+    list_1.append(random.randint(1, n))
+res = list_1[0]
+min = abs(x - list_1[0])
+
+for num in list_1:
+    d = abs(x - num)
+    if d < min:
+        res = num
+        min = d
+
+print(f'Число {res} в массиве {list_1}наиболее близкое к числу {x}')
